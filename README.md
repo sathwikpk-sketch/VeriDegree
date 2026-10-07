@@ -37,7 +37,7 @@ npx hardhat test
 
 ## Deploy to Sepolia
 
-Create a `.env` file (this should stay local and not be committed) with:
+Create a local `.env` file if needed for deployment; do not commit it.
 
 ```env
 SEPOLIA_RPC_URL=your_rpc_url
@@ -130,9 +130,9 @@ acknowledged and managed transparently.
 **1. Trust in institution-submitted data.** The blockchain can prove that a
 credential record has not been altered since issuance, but it cannot prove that
 the institution's original information was truthful. *Mitigation:* only
-addresses that the 2-of-3 admin multisig has explicitly approved can issue
-credentials at all. Institutional legitimacy is an off-chain trust decision the
-admins make when approving an address.
+addresses approved by the 2-of-3 admin multisig can issue credentials at all.
+Institutional legitimacy is an off-chain trust decision the admins make when
+approving an address.
 
 **2. Student wallet loss.** A student may lose access to the wallet tied to
 a credential. *Mitigation:* `updateCredentialStudent` lets the *original issuing
@@ -177,3 +177,4 @@ slither contracts/VeriDegree.sol
 
 Run this again after any contract change. The finding count in this README only
 reflects the version it was last generated against.
+>>>>>>> origin/main
