@@ -177,4 +177,3 @@ slither contracts/VeriDegree.sol
 
 Run this again after any contract change. The finding count in this README only
 reflects the version it was last generated against.
->>>>>>> origin/main
